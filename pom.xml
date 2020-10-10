@@ -12,6 +12,7 @@
     <modules>
         <module>sharding-jdbc-simple</module>
         <module>sharding-jdbc-simple</module>
+        <module>sharding-jdbc-simple-fenku</module>
     </modules>
 
     <parent>
