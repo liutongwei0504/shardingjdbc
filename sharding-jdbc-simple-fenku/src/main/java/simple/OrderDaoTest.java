@@ -39,4 +39,14 @@ public class OrderDaoTest {
         List<Map> maps = orderDao.selectOrderbyIds(ids);
         System.out.println(maps);
     }
+
+    @Test
+    public void testInsertOrderUser(){
+        for (int i=0;i<10;i++){
+            orderDao.insertOrder(new BigDecimal((i+1)*5),1L,"WAIT_PAY");
+        }
+        for (int i=0;i<10;i++){
+            orderDao.insertOrder(new BigDecimal((i+1)*10),2L,"WAIT_PAY");
+        }
+    }
 }
