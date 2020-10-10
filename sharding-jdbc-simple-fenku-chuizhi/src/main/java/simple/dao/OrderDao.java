@@ -57,5 +57,5 @@ public interface OrderDao {
             " </foreach>" +
             " and user_id=#{userId}" +
             "</script>")
-    List<Map> selectOrderbyUserAndIds(@Param("userId") Long userId,@Param("orderIds") List<Long> orderIds);
+    List<Map> selectOrderbyUserAndIds(@Param("userId") Long userId, @Param("orderIds") List<Long> orderIds);
 }
